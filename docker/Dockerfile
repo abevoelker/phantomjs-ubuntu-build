@@ -12,6 +12,7 @@ RUN mkdir /data &&\
   cd /data &&\
   git clone --recurse-submodules git://github.com/ariya/phantomjs.git &&\
   cd phantomjs &&\
+  git reset --hard 2ffe94b2fe8eadfe098862de829d7d0c3bb80429 &&\
   ./build.py &&\
   cp -a bin/phantomjs /usr/local/bin/
 
